@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "eca499e5-4afc-433d-91d5-0977373a4c03",
+		"name": "Product_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API_Product",
+			"item": [
+				{
+					"name": "Get All List Product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page_no\":\"0\",\r\n    \"limit\":\"10\",\r\n    \"sortby\":\"ASC\",\r\n    \"orderby\":\"\",\r\n    \"businessUnitId\":\"\",\r\n    \"businessUnitTypeId\":\"\",\r\n    \"productName\":\"\",\r\n    \"productFunction\":\"\",\r\n    \"productDetails\":\"\",\r\n    \"nigpUnpscCodes\":\"\",\r\n    \"status\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/products/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"products",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"winopps@mailinator.com\",\r\n    \"password\":\"admin@123#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"businessUnitId\":\"1\",\r\n\t\"businessUnitTypeId\":\"1\",\r\n\t\"productName\":\"name test\",\r\n\t\"productFunction\":\"function test\",\r\n\t\"productDetails\":\"detail test\",\r\n\t\"nigpUnpscCodes\":\"code \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/products/add/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"products",
+								"add",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":10,\r\n\t\"businessUnitId\":\"1\",\r\n\t\"businessUnitTypeId\":\"1\",\r\n\t\"productName\":\"name test\",\r\n\t\"productFunction\":\"function test\",\r\n\t\"productDetails\":\"detail test\",\r\n\t\"nigpUnpscCodes\":\"code \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/products/add/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"products",
+								"add",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/campany/capabilities/products/delete?productId=150",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"campany",
+								"capabilities",
+								"products",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "150"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ALL List Product Module",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTEyNzQzLCJpYXQiOjE2MjM5MDU1NDN9.QRB0QCCh87GPnpJalP28nYU3zooGMrKZfmCflLOuAZFCiM686goh1OoQdnqj2vnCrccmV-xw6G7mtqmW5novsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/get/product/module?productId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"get",
+								"product",
+								"module"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD Product Module",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fieldData\": \"file data\",\r\n  \"fieldDescription\": \"file description\",\r\n  \"fieldName\": \"file name\",\r\n  \"productFieldType\": \"File lable\",\r\n  \"productId\": \"1\",\r\n  \"isNewField\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/products/module/add/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"products",
+								"module",
+								"add",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product Module",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fieldData\": \"file data\",\r\n  \"fieldDescription\": \"file description\",\r\n  \"fieldName\": \"file name\",\r\n  \"productFieldType\": \"File lable\",\r\n  \"productId\": \"1\",\r\n  \"productModuleId\": 26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/products/module/add/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"products",
+								"module",
+								"add",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product Module",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3aW5vcHBzQG1haWxpbmF0b3IuY29tIiwiZXhwIjoxNjIzOTExNDQ0LCJpYXQiOjE2MjM5MDQyNDR9.tCjqAQF50i86e9j5u5ZTEOxgeKDONnbCuad74xxVG7CmQGksMeapYw9rERif5JRLl5I2YYElCQOcHXXQHrBeoQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/rfx/company/capabilities/products/module/deleted?productModuleId=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"rfx",
+								"company",
+								"capabilities",
+								"products",
+								"module",
+								"deleted"
+							],
+							"query": [
+								{
+									"key": "productModuleId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
