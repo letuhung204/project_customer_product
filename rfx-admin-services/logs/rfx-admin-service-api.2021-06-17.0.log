@@ -2455,3 +2455,224 @@ java.sql.SQLException: Can not issue data manipulation statements with executeQu
 08:46:49.354 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 08:46:49.354 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.ErrorResponse@1e3635bf]
 08:46:49.355 [http-nio-8003-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+10:00:15.719 [main] INFO  c.rfx.api.RfxAdminServiceApplication - Starting RfxAdminServiceApplication on DESKTOP-12DGTI2 with PID 22832 (C:\Users\winop\OneDrive\Documents\git\project_customer_product\rfx-admin-services\target\classes started by winop in C:\Users\winop\OneDrive\Documents\git\project_customer_product\rfx-admin-services)
+10:00:15.722 [main] INFO  c.rfx.api.RfxAdminServiceApplication - No active profile set, falling back to default profiles: default
+10:00:16.724 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:00:16.901 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168ms. Found 27 JPA repository interfaces.
+10:00:17.181 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:00:17.183 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:00:17.184 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@483b0690' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:00:17.186 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:00:17.188 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:00:17.379 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+10:00:17.392 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+10:00:17.394 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:00:17.395 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+10:00:17.648 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:00:17.648 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+10:00:17.648 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1878 ms
+10:00:17.870 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:00:17.927 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+10:00:18.025 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+10:00:18.106 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:00:20.914 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:00:20.925 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+10:00:36.524 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:00:36.528 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:00:38.098 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtRequestFilter urls=[/*] order=2147483647
+10:00:38.098 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+10:00:38.169 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:00:38.502 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 99 mappings in 'requestMappingHandlerMapping'
+10:00:38.567 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:00:38.674 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+10:00:38.675 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+10:00:38.675 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+10:00:38.675 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/configuration/**'], []
+10:00:38.675 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+10:00:38.675 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/public'], []
+10:00:38.675 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/h2-console/**/**'], []
+10:00:38.787 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+10:00:38.800 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11eb8842, org.springframework.security.web.context.SecurityContextPersistenceFilter@360ccb68, org.springframework.security.web.header.HeaderWriterFilter@7441edeb, org.springframework.web.filter.CorsFilter@4ed7db72, org.springframework.security.web.authentication.logout.LogoutFilter@9886ec3, com.rfx.api.security.JwtRequestFilter@8b71052, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@672c4e24, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47a72c32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7018636a, org.springframework.security.web.session.SessionManagementFilter@37d50217, org.springframework.security.web.access.ExceptionTranslationFilter@631c6ef4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6db64abf]
+10:00:38.852 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:00:38.864 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+10:00:38.888 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+10:00:38.985 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:00:38.995 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:00:39.016 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:00:39.621 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_1
+10:00:39.648 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_2
+10:00:39.708 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: changeKeywordEntryStatusUsingPUT_1
+10:00:39.713 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_3
+10:00:39.740 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_4
+10:00:39.786 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_5
+10:00:39.814 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_6
+10:00:39.843 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_7
+10:00:39.872 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_8
+10:00:39.931 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+10:00:39.956 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+10:00:39.958 [main] INFO  c.rfx.api.RfxAdminServiceApplication - Started RfxAdminServiceApplication in 24.635 seconds (JVM running for 25.79)
+10:00:51.716 [http-nio-8003-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:00:51.716 [http-nio-8003-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:00:51.716 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+10:00:51.723 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+10:00:51.723 [http-nio-8003-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+10:00:51.737 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#companyProductsSearch(CompanyProductSearch)
+10:00:52.360 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/products/search", parameters={}
+10:00:52.361 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#companyProductsSearch(CompanyProductSearch)
+10:00:52.393 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CompanyProductSearch(page_no=0, limit=10, sortby=ASC, orderby=, businessUnitId=, businessUnitTypeId= (truncated)...]
+10:00:52.660 [http-nio-8003-exec-3] INFO  c.r.a.c.CompanyCapabilitiesController - Company products searching..
+10:00:54.385 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:00:54.386 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [CompanyProductSearchResp(companyProducts=Page 1 of 2 containing com.rfx.api.model.TableCompanyProduc (truncated)...]
+10:00:54.405 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:01:00.448 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#companyProductsSearch(CompanyProductSearch)
+10:01:00.931 [http-nio-8003-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/products/search", parameters={}
+10:01:00.931 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#companyProductsSearch(CompanyProductSearch)
+10:01:00.932 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CompanyProductSearch(page_no=0, limit=10, sortby=ASC, orderby=, businessUnitId=, businessUnitTypeId= (truncated)...]
+10:01:01.178 [http-nio-8003-exec-2] INFO  c.r.a.c.CompanyCapabilitiesController - Company products searching..
+10:01:02.868 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:01:02.869 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [CompanyProductSearchResp(companyProducts=Page 1 of 2 containing com.rfx.api.model.TableCompanyProduc (truncated)...]
+10:01:02.873 [http-nio-8003-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:02:52.206 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#createCompanyProducts(CompanyProductsCreate)
+10:02:52.692 [http-nio-8003-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/rfx/company/capabilities/products/add/update", parameters={}
+10:02:52.692 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#createCompanyProducts(CompanyProductsCreate)
+10:02:52.694 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CompanyProductsCreate(productId=0, businessUnitId=1, businessUnitTypeId=1, productName=name test, pr (truncated)...]
+10:02:52.936 [http-nio-8003-exec-6] INFO  c.r.a.c.CompanyCapabilitiesController - Create/Update company products..
+10:02:54.411 [http-nio-8003-exec-6] INFO  com.rfx.api.service.RfxAdminService - Adding Products..
+10:02:55.942 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:02:55.942 [http-nio-8003-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.SuccessResponse@33a841d2]
+10:02:55.944 [http-nio-8003-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:03:16.483 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#createCompanyProducts(CompanyProductsCreate)
+10:03:16.975 [http-nio-8003-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/rfx/company/capabilities/products/add/update", parameters={}
+10:03:16.975 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#createCompanyProducts(CompanyProductsCreate)
+10:03:16.976 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CompanyProductsCreate(productId=10, businessUnitId=1, businessUnitTypeId=1, productName=name test, p (truncated)...]
+10:03:17.218 [http-nio-8003-exec-5] INFO  c.r.a.c.CompanyCapabilitiesController - Create/Update company products..
+10:03:18.655 [http-nio-8003-exec-5] INFO  com.rfx.api.service.RfxAdminService - Adding Products..
+10:03:19.624 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:03:19.624 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.SuccessResponse@684262a5]
+10:03:19.626 [http-nio-8003-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:03:55.345 [http-nio-8003-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList()
+10:03:55.835 [http-nio-8003-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/get/product/module", parameters={}
+10:03:55.835 [http-nio-8003-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList()
+10:03:56.084 [http-nio-8003-exec-8] INFO  c.r.a.c.CompanyCapabilitiesController - Getting Product Module..
+10:03:57.535 [http-nio-8003-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:03:57.535 [http-nio-8003-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductModuleResp(productModules=[TableProductModules(id=3, productId=1, productFieldType=File lable (truncated)...]
+10:03:57.538 [http-nio-8003-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:04:09.134 [http-nio-8003-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#createProductsModule(ProductModuleCreate)
+10:04:09.655 [http-nio-8003-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/rfx/company/capabilities/products/module/add/update", parameters={}
+10:04:09.655 [http-nio-8003-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#createProductsModule(ProductModuleCreate)
+10:04:09.658 [http-nio-8003-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ProductModuleCreate(productModuleId=0, productId=1, isNewField=false, productFieldType=File lable, f (truncated)...]
+10:04:09.907 [http-nio-8003-exec-10] INFO  c.r.a.c.CompanyCapabilitiesController - Create/Update products modules..
+10:04:11.368 [http-nio-8003-exec-10] INFO  com.rfx.api.service.RfxAdminService - Adding Product Module..
+10:04:12.332 [http-nio-8003-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:04:12.333 [http-nio-8003-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.SuccessResponse@106c2948]
+10:04:12.334 [http-nio-8003-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:09:57.656 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#deleteCompanyProduct(int)
+10:09:58.139 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/rfx/campany/capabilities/products/delete?productId=15", parameters={masked}
+10:09:58.139 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#deleteCompanyProduct(int)
+10:09:58.382 [http-nio-8003-exec-3] INFO  c.r.a.c.CompanyCapabilitiesController - Deleted company products..
+10:10:02.023 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:10:02.024 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.SuccessResponse@4e3218fa]
+10:10:02.025 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:10:41.850 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#deleteCompanyProductModule(int)
+10:10:42.338 [http-nio-8003-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/rfx/company/capabilities/products/module/deleted?productModuleId=5", parameters={masked}
+10:10:42.338 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#deleteCompanyProductModule(int)
+10:10:42.583 [http-nio-8003-exec-2] INFO  c.r.a.c.CompanyCapabilitiesController - Deleted products module..
+10:10:45.238 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:10:45.238 [http-nio-8003-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.SuccessResponse@75e795e2]
+10:10:45.240 [http-nio-8003-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:10:51.732 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#deleteCompanyProduct(int)
+10:10:52.213 [http-nio-8003-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/rfx/campany/capabilities/products/delete?productId=150", parameters={masked}
+10:10:52.213 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#deleteCompanyProduct(int)
+10:10:52.458 [http-nio-8003-exec-4] INFO  c.r.a.c.CompanyCapabilitiesController - Deleted company products..
+10:10:53.892 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:10:53.893 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.rfx.api.model.ErrorResponse@48936af5]
+10:10:53.894 [http-nio-8003-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+10:21:57.926 [main] INFO  c.rfx.api.RfxAdminServiceApplication - Starting RfxAdminServiceApplication on DESKTOP-12DGTI2 with PID 23080 (C:\Users\winop\OneDrive\Documents\git\project_customer_product\rfx-admin-services\target\classes started by winop in C:\Users\winop\OneDrive\Documents\git\project_customer_product\rfx-admin-services)
+10:21:57.930 [main] INFO  c.rfx.api.RfxAdminServiceApplication - No active profile set, falling back to default profiles: default
+10:21:58.869 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:21:59.015 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 27 JPA repository interfaces.
+10:21:59.299 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:21:59.302 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:21:59.303 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4fa4f485' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:21:59.305 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:21:59.308 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:21:59.490 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+10:21:59.497 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+10:21:59.498 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:21:59.498 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+10:21:59.612 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:21:59.612 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+10:21:59.612 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1620 ms
+10:21:59.808 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:21:59.858 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+10:21:59.941 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+10:22:00.016 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:22:02.728 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:22:02.741 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+10:22:17.912 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:22:17.919 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:22:20.999 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtRequestFilter urls=[/*] order=2147483647
+10:22:20.999 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+10:22:21.087 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:22:21.365 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 99 mappings in 'requestMappingHandlerMapping'
+10:22:21.424 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:22:21.496 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+10:22:21.496 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+10:22:21.496 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+10:22:21.496 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/configuration/**'], []
+10:22:21.496 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+10:22:21.496 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/public'], []
+10:22:21.497 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/h2-console/**/**'], []
+10:22:21.602 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+10:22:21.615 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d00241b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5834fd3f, org.springframework.security.web.header.HeaderWriterFilter@3da8a302, org.springframework.web.filter.CorsFilter@365fde74, org.springframework.security.web.authentication.logout.LogoutFilter@6dcb4f30, com.rfx.api.security.JwtRequestFilter@178617da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44b99467, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3638120f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@760b9444, org.springframework.security.web.session.SessionManagementFilter@7441edeb, org.springframework.security.web.access.ExceptionTranslationFilter@47bae235, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f98859a]
+10:22:21.664 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:22:21.677 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+10:22:21.709 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+10:22:21.806 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:22:21.816 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:22:21.836 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:22:22.548 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_1
+10:22:22.575 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_2
+10:22:22.633 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: changeKeywordEntryStatusUsingPUT_1
+10:22:22.636 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_3
+10:22:22.664 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_4
+10:22:22.714 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_5
+10:22:22.743 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_6
+10:22:22.773 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_7
+10:22:22.802 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_8
+10:22:22.863 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+10:22:22.886 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+10:22:22.888 [main] INFO  c.rfx.api.RfxAdminServiceApplication - Started RfxAdminServiceApplication in 25.386 seconds (JVM running for 26.394)
+10:22:35.300 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:22:35.301 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:22:35.301 [http-nio-8003-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+10:22:35.306 [http-nio-8003-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+10:22:35.306 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+10:22:35.315 [http-nio-8003-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:22:35.931 [http-nio-8003-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/get/product/module", parameters={}
+10:22:35.932 [http-nio-8003-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:22:36.195 [http-nio-8003-exec-1] INFO  c.r.a.c.CompanyCapabilitiesController - Getting Product Module..
+10:22:37.618 [http-nio-8003-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:22:37.619 [http-nio-8003-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductModuleResp(productModules=[TableProductModules(id=3, productId=1, productFieldType=File lable (truncated)...]
+10:22:37.631 [http-nio-8003-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:23:00.028 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:23:00.502 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/get/product/module?productId=1", parameters={masked}
+10:23:00.502 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:23:00.735 [http-nio-8003-exec-3] INFO  c.r.a.c.CompanyCapabilitiesController - Getting Product Module..
+10:23:00.975 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:23:00.975 [http-nio-8003-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductModuleResp(productModules=[TableProductModules(id=3, productId=1, productFieldType=File lable (truncated)...]
+10:23:00.977 [http-nio-8003-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:23:07.811 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:23:08.287 [http-nio-8003-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/get/product/module?productId=2", parameters={masked}
+10:23:08.288 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:23:08.525 [http-nio-8003-exec-4] INFO  c.r.a.c.CompanyCapabilitiesController - Getting Product Module..
+10:23:08.757 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:23:08.757 [http-nio-8003-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductModuleResp(productModules=[], message=Success, code=200)]
+10:23:08.758 [http-nio-8003-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:23:29.630 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:23:30.105 [http-nio-8003-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/rfx/company/capabilities/get/product/module", parameters={}
+10:23:30.105 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.rfx.api.controller.CompanyCapabilitiesController#getProductModuleList(Integer)
+10:23:30.338 [http-nio-8003-exec-5] INFO  c.r.a.c.CompanyCapabilitiesController - Getting Product Module..
+10:23:31.737 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10:23:31.738 [http-nio-8003-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductModuleResp(productModules=[TableProductModules(id=3, productId=1, productFieldType=File lable (truncated)...]
+10:23:31.739 [http-nio-8003-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

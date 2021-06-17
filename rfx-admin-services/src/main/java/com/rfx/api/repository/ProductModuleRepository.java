@@ -16,4 +16,7 @@ public interface ProductModuleRepository extends JpaRepository<TableProductModul
     @Transactional
     @Query(value="delete from product_modules where product_id =:productId",nativeQuery = true)
     void deleteProductModulesByProductId(@Param("productId")int productId );
+
+    @Query(value="select * from product_modules where product_id =:productId",nativeQuery = true)
+    List<TableProductModules> findByProductId(@Param("productId")int productId);
 }

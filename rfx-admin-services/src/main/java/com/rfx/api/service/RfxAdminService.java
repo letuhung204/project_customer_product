@@ -2709,9 +2709,14 @@ public class RfxAdminService implements UserDetailsService {
 				 
 			}
 			
-			public ProductModuleResp getProductModuleList()
+			public ProductModuleResp getProductModuleList(Integer productId)
 			{
-				ArrayList<TableProductModules> productModules=(ArrayList<TableProductModules>) productModuleRepository.findAll();
+				List<TableProductModules> productModules = new ArrayList<TableProductModules>();
+				if(productId !=null){
+					productModules = productModuleRepository.findByProductId(productId);
+				}else{
+					productModules = productModuleRepository.findAll();
+				}
 				ArrayList<TableProductModules> productModulesListData=new ArrayList<TableProductModules>();
 				for(TableProductModules productModulesData:productModules)
 				{
