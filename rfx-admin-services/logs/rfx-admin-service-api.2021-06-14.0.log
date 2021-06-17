@@ -1,0 +1,56 @@
+13:31:55.069 [main] INFO  c.rfx.api.RfxAdminServiceApplication - Starting RfxAdminServiceApplication on DESKTOP-12DGTI2 with PID 2556 (C:\Users\winop\OneDrive\Documents\winopps_api\rfx-admin-services\target\classes started by winop in C:\Users\winop\OneDrive\Documents\winopps_api\rfx-admin-services)
+13:31:55.073 [main] INFO  c.rfx.api.RfxAdminServiceApplication - No active profile set, falling back to default profiles: default
+13:31:56.886 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:31:57.193 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 288ms. Found 27 JPA repository interfaces.
+13:31:58.065 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:31:58.075 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:31:58.078 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2ba42204' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:31:58.083 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:31:58.091 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:31:58.612 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8002 (http)
+13:31:58.629 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8002"]
+13:31:58.630 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:31:58.631 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+13:31:58.888 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:31:58.889 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+13:31:58.889 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3721 ms
+13:31:59.327 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:31:59.491 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+13:31:59.823 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:32:00.097 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:32:03.340 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:32:03.487 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:32:20.933 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:32:20.952 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:32:25.876 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtRequestFilter urls=[/*] order=2147483647
+13:32:25.876 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+13:32:26.001 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:32:26.547 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 96 mappings in 'requestMappingHandlerMapping'
+13:32:26.639 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:32:26.782 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+13:32:26.782 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+13:32:26.782 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+13:32:26.783 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/configuration/**'], []
+13:32:26.783 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+13:32:26.783 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/public'], []
+13:32:26.783 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/h2-console/**/**'], []
+13:32:26.926 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+13:32:26.942 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3723de42, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bf27411, org.springframework.security.web.header.HeaderWriterFilter@7a14d8a4, org.springframework.web.filter.CorsFilter@293988dc, org.springframework.security.web.authentication.logout.LogoutFilter@5add0cc0, com.rfx.api.security.JwtRequestFilter@1df83569, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57e83608, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d2ca3a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47b72d3b, org.springframework.security.web.session.SessionManagementFilter@1dd01876, org.springframework.security.web.access.ExceptionTranslationFilter@6f45a2fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3725242e]
+13:32:27.013 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:32:27.027 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+13:32:27.071 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+13:32:27.208 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:32:27.226 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:32:27.256 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:32:27.951 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_1
+13:32:27.986 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_2
+13:32:28.085 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: changeKeywordEntryStatusUsingPUT_1
+13:32:28.091 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_3
+13:32:28.139 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_4
+13:32:28.218 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_5
+13:32:28.293 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_6
+13:32:28.339 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_7
+13:32:28.398 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkUsingPUT_8
+13:32:28.518 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8002"]
+13:32:28.558 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8002 (http) with context path ''
+13:32:28.560 [main] INFO  c.rfx.api.RfxAdminServiceApplication - Started RfxAdminServiceApplication in 34.165 seconds (JVM running for 36.597)
